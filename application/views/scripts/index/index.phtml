@@ -1,0 +1,17 @@
+<h3>Últimos 3 produtos adicionados</h3>
+<?php foreach($this->latestProducts as $product): ?>
+<p><?php echo $product->name; ?></p>
+<?php endforeach; ?>
+
+<h3>Produtos com valor maior que R$20,00 e menor que R$50,00</h3>
+<?php foreach($this->productsByPrice as $product): ?>
+<p><?php echo $product->name; ?></p>
+<?php endforeach; ?>
+
+<h3>Procurar usuários pelo nome</h3>
+<?php foreach($this->usersByName as $user): ?>
+<p><?php echo $user->name; ?></p>
+<?php endforeach; ?>
+
+<h3>Procurar usuário pelo email</h3>
+<p><?php echo $this->userByEmail->name; ?></p>
